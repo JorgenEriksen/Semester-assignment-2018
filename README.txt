@@ -25,11 +25,6 @@ The format is explained in a paragraph above the input so users with not support
 I know this is not an optimal solution, but I havet fiqured out how to use third party solution for example to solve this as I found this out a little late.
 Lesson learned, I should validate the codes early.
 
-Coursework 1: https://folk.ntnu.no/jorgberi/eriksenfirstwebsite/index.html
-Coursework 2: https://folk.ntnu.no/jorgberi/eriksensecondwebsite/index.html
-Coursework 3: https://folk.ntnu.no/jorgberi/040908070107/index.html
-
-
 Hope you like it!
 
 
