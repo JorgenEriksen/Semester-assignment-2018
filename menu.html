@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>I Scream | Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ice cream menu">
+    <meta name="keywords" content="ice, cream, food, dessert, sundae, mousses, smoothies">
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- Link to google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Atma" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- The gray header at the top-->
+    <header>
+        <a href="index.html"><img src="images/icecream-logo.png" id="icecream-logo" alt="The company logo I Scream in bloody letters"></a>
+        <p id="description">"I scream for ice cream"</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Introduction to the page-->
+    <div id="intro">
+        <h1>Our menu!</h1>
+        <div id="horizontal-line"></div>
+        <p>Have you tasted all our products? They are all scary good!</p>
+    </div>
+
+    <div id="menu-field">
+        <div id="menu-system">
+            <label for="iceCreamsCheck">Ice Creams</label>
+            <input type="checkbox" id="iceCreamsCheck" checked>
+            <label for="sundaesCheck">Sundaes</label>
+            <input type="checkbox" id="sundaesCheck" checked>
+            <label for="moussesCheck">Mousses</label>
+            <input type="checkbox" id="moussesCheck" checked>
+            <label for="smoothiesCheck">Smoothies</label>
+            <input type="checkbox" id="smoothiesCheck" checked>
+            <span id="sort-buttons-container">
+                <button id="sort-by-name">Sort by name</button>
+                <button id="sort-by-description">Sort by description</button>
+                <button id="sort-by-price">Sort by price</button>
+            </span>
+
+            <div id="menu-container">
+                <!-- menu list is created by show-menu.js inside menu-container -->
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="scripts/menu-database.js"></script>
+    <script src="scripts/show-menu.js"></script>
+</body>
+
+</html>

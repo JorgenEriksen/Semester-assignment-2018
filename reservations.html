@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>I Scream | Reservation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Reservation form">
+    <meta name="keywords" content="ice, cream, reservation, form">
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- Link to google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Atma" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- The gray header at the top-->
+    <header>
+        <a href="index.html"><img src="images/icecream-logo.png" id="icecream-logo" alt="The company logo I Scream in bloody letters"></a>
+        <p id="description">"I scream for ice cream"</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Introduction to the page-->
+    <div id="intro">
+        <h1>Reservations</h1>
+        <div id="horizontal-line"></div>
+        <p>Be sure to have a seat when you arrive by reservate a seat underneath</p>
+    </div>
+
+    <!-- Reservation form-->
+    <div id="form-container">
+        <form name="reservate" action="scripts/reservation.php" method="post" onsubmit="return validate()" >
+            <!-- name -->
+            <label for="firstname">firstname</label>
+            <input type="text" id="firstname" name="firstname" placeholder="firstname">
+            <label for="lastname">lastname</label>
+            <input type="text" id="lastname" name="lastname" placeholder="lastname">
+            <!-- mobile phone number -->
+            <label for="mobile">mobile phone</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="mobilenumber">
+            <!-- email adress -->
+            <label for="email">email address</label>
+            <input type="email" id="email" name="email" placeholder="email address">
+            <!-- date -->
+            <label for="date">date</label>
+            <p>(dd.mm.yyyy)</p>
+            <input type="date" id="date" name="date">
+            <!-- time -->
+            <label for="time">time of arrival</label>
+            <p>(We are open between 10:00 and 22:00)</p>
+            <input type="time" id="time" name="time" min="10:00" max="22:00" required>
+            <!-- number of people -->
+            <fieldset>
+                <legend>number of people</legend>
+                <label for="adults">adults</label>
+                <input type="number" id="adults" value="1" min="1">
+                <label for="childeren">childeren</label>
+                <input type="number" id="childeren">
+                <label for="infants">infants</label>
+                <input type="number" id="infants">
+            </fieldset>
+            <!-- any comments (not required) -->
+            <label for="add-on-reservation">any comments</label>
+            <textarea id="add-on-reservation" placeholder="Something you want to add to the reservation?"></textarea>
+            <!-- submit buttons -->
+            <input type="submit" value="Submit" name="submit">
+        </form>
+
+    </div>
+
+    <script src="scripts/form-validator.js"></script>
+</body>
+
+</html>

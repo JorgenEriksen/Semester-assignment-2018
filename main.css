@@ -1,0 +1,336 @@
+/* ### Start of universal rules ### */
+body {
+    color: white;
+    /* fallback color in case the image wont fill the page for some reason. It also as an effekt when the user adjust the browser window to a bigger size, the color will fill the gap for milli secound before the page fills the browser window */
+    background-color: #363636;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8),
+        6px 6px 12px rgba(0, 0, 0, 0.3),
+        12px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+body * {
+    /* Sans-serif fonts for high readability. */
+    font-family: 'PT Sans', Verdana, sans-serif;
+}
+
+/* ### Start of header ### */
+header {
+    background-color: rgb(54, 54, 54);
+    border-bottom: black 1px solid;
+    box-shadow: 3px 0px 16px rgba(54, 54, 54, 0.8);
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Logo in top left corner */
+#icecream-logo {
+    width: 180px;
+    margin-left: 10px;
+}
+
+/* The little slogan in the middle of the header*/
+#description {
+    font-family: 'Atma', cursive;
+    font-size: 1.3em;
+    color: white;
+}
+
+/* list rules*/
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+
+li a {
+    color: white;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+}
+
+li a:hover {
+    color: #A10416;
+}
+/* ### END OF HEADER ### */
+
+/* The intro before the content of the page*/
+#intro {
+    text-align: center;
+    padding-top: 5%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    color: #A10416;
+}
+
+#intro p {
+    font-size: 1.2em;
+    text-shadow: 2px 2px 3px black,
+        6px 6px 12px rgba(0, 0, 0, 0.8),
+        12px 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* Making an empty div an horizontal line */
+#horizontal-line {
+    border-top: white solid 1px;
+    width: 50%;
+    margin: 40px auto;
+}
+
+/* Styling the buttons */
+button,
+input[type="submit"],
+#front-button {
+    border: black solid 2px;
+    border-radius: 10px;
+    background-color: #a10416;
+    
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    height: 40px;
+}
+
+button:hover, 
+#front-button:hover {
+    background-color: rgba(161, 4, 22, 0.4);
+}
+
+#front-button {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: none;
+    color: black;
+    padding: 10px 30px;
+}
+
+
+/* card boxes*/
+#card-container {
+    padding-top: 60px;
+    /* flexbox*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#card-container>div {
+    width: 26%;
+    margin: 10px;
+    border-radius: 81px;
+    background-color: #363636;
+    border: solid black 1px;
+    box-shadow: 4px 4px 14px black
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.card img {
+    box-sizing: border-box;
+    display: block;
+    margin: 5% auto;
+    width: auto;
+    height: 200px;
+}
+
+.card p {
+    color: white;
+    padding: 0 15%;
+}
+
+.card h2 {
+    text-align: center;
+    color: #A10416;
+}
+
+/* For the opening hours list */
+#opening-hours li{
+    margin: 10px;
+    font-size: 1.2em;
+}
+
+/* Styling google maps API. */
+iframe {
+    display: block;
+    margin: 10% auto;
+    width: 70%;
+    height: 175px;
+    border: none;
+}
+
+/* form container and form rules (resercation and contact page) */
+#form-container {
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    color: #A10416;
+    background-color: #363636;
+    background-image: url(images/icecreamicon1.png),
+        url(images/icecreamicon2.png);
+    background-repeat: no-repeat;
+    background-size: 25%, 25%, 100%;
+    background-position: top left, bottom right;
+
+}
+
+#form-container * {
+    text-align: center;
+    margin: 5px auto;
+}
+
+#form-container label,
+legend {
+    font-size: 2em;
+    text-transform: capitalize;
+
+}
+
+#form-container input,
+textarea {
+    display: block;
+    width: 400px;
+    height: 30px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+#form-container fieldset input {
+    width: 100px;
+}
+
+textarea {
+    height: 400px;
+}
+/* ### End of universal rules ### */
+
+
+/* Menu page */
+
+/* The whole menu content */
+#menu-field {
+    background-color: #363636;
+    border: black solid 1px;
+}
+
+/* Menu sort/filter buttons and menu list*/
+#menu-system {
+    margin: 0 5%;
+    padding: 40px 0;
+}
+
+.menu-box {
+    background-color: rgba(161, 4, 22, 0.2);
+    border: black solid 1px;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.categorie-title {
+    text-transform: capitalize;
+    color: #A10416;
+}
+
+/* Contact page */
+
+/* card 3 (opening hours)*/
+#opening-hours {
+    display: block;
+    text-align: center;
+}
+
+/* Media queries */
+
+/* iPad size or less */
+@media (max-width: 1024px) {
+    header {
+        padding-bottom: 20px;
+        /* flexbox*/
+        flex-direction: column;
+    }
+
+    #icecream-logo {
+        width: 250px;
+        margin-left: 0px;
+    }
+
+    #description {
+        margin-top: 0;
+    }
+
+    li a {
+        padding: 0 30px;
+    }
+
+    #card-container {
+        padding-top: 20px;
+        /* flexbox*/
+        /* makes frontpage cards verticle and center */
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #card-container>div {
+        width: 80%;
+    }
+
+    #form-container {
+        background-image: none;
+    }
+
+    /* Menu page */
+    #sort-buttons-container {
+        display: block;
+    }
+}
+
+/* Typical mobile size */
+@media (max-width: 600px) {
+    header {
+        padding-bottom: 10px;
+    }
+
+    #description {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    ul {
+        display: inline;
+        text-align: center;
+    }
+
+    li a {
+        padding: 5px 0;
+        font-size: 1.2em;
+    }
+}
