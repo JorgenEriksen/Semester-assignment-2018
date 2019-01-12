@@ -13,7 +13,7 @@ You can see my code in form-validator.js.
 I have decided to use Flexbox on the header and the 3 "card" boxes on home and contact page.
 I have not used Grid or flexbox any other places on the website, as it is not needed for this layout.
 
-The background picture and the mail icon has CC0 Creative Commonsis. I have modified the picture by making it blury in photoshop.
+The background picture and the mail icon has CC0 Creative Commonsis. I have modified the background picture by making it blury in photoshop.
 I got the background picture from here: https://pixabay.com/no/iskrem-iskrembar-dessert-is-kaldt-410330/
 And the mail icon from here: https://svgsilh.com/image/1332774.html
 
