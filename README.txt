@@ -22,7 +22,7 @@ This is because I have used type="date" and type="time" on 2 Inputs.
 They are not supportet on all browser, like Safari.
 If a Browser that does not support this open the page, the input will change to type="text".
 The format is explained in a paragraph above the input so users with not support broser can just write the date in the format that is explained.
-I know this is not an optimal solution, but I havet fiqured out how to use third party solution for example to solve this as I found this out a little late.
+I know this is not an optimal solution, but I haven't fiqured out how to use third party solution for example to solve this as I found this out a little late.
 Lesson learned, I should validate the codes early.
 
 Hope you like it!
