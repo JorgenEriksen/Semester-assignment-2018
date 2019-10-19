@@ -7,7 +7,7 @@ Ice creams can be filtered by category, using the checkboxes.
 You can see my code in show-menu.js and database.js
 
 I have made forms in the Reservation page and on the Contact page.
-Its is only on the Reservation page that I have included validation on, regarding the coursework 4.
+Its only on Reservation page that I have included validation on, regarding the coursework 4.
 You can see my code in form-validator.js.
 
 I have decided to use Flexbox on the header and the 3 "card" boxes on home and contact page.
